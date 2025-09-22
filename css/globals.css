@@ -1,0 +1,95 @@
+/* Reset Global - PRIMEIRO A SER CARREGADO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Essencial para um bom layout */
+}
+
+/* Estilos para o BODY (globais para TODO O SITE, exceto login) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #f4f4f4; /* Cor de fundo padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- ESTILOS DA NOVA BARRA SUPERIOR (top-bar) --- */
+.top-bar { /* Classe renomeada */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #20a136; /* Fundo escuro para a barra */
+    color: #060303;
+    padding: 10px 20px;
+    height: 60px; /* Altura da barra superior (ajuste conforme necessário) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.site-logo-text { /* Estilos para o texto/mini-logo na barra superior */
+    font-size: 24px; /* Tamanho da fonte para "ETBRAZ" */
+    font-weight: bold;
+    color: #fff; /* Cor do texto "ETBRAZ" */
+    margin-left: 20px; /* Espaçamento da borda esquerda */
+}
+
+/* Estilos para as informações do usuário logado */
+.top-bar .user-info { /* Ajuste o seletor para .top-bar */
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .user-info a { /* Ajuste o seletor para .top-bar */
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-bar .user-info a:hover { /* Ajuste o seletor para .top-bar */
+    text-decoration: underline;
+}
+
+/* --- ESTILOS DA IMAGEM DE BANNER PRINCIPAL (topo.jpg) --- */
+.main-banner-image {
+    background-image: url('../img/topo.jpg'); /* O caminho da imagem agora é aqui */
+    background-size: cover; /* Faz a imagem cobrir toda a área, cortando se necessário */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    width: 100%; /* Ocupa a largura total */
+    height: 250px; /* **Altura do seu banner (ajuste conforme desejar)** */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para o banner, se desejar */
+}
+
+/* --- ESTILOS DA BARRA DE NAVEGAÇÃO (<section> <nav>) --- */
+section {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 60px - 250px - 60px - 40px); /* Ajustado: 100vh - top-bar - banner - footer - main padding */
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- ESTILOS DO RODAPÉ --- */
+.footer {
+    background-color: #20a136;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 60px; /* Rodapé mais compacto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}

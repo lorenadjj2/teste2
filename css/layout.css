@@ -1,0 +1,84 @@
+/* public/css/layout.css */
+
+/*
+   Este arquivo contém estilos para os componentes de layout estrutural do site,
+   como barra de navegação, banner, e rodapé.
+*/
+
+/* --- ESTILOS DA BARRA SUPERIOR (top-bar) --- */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-header-bg); /* Fundo verde da barra */
+    color: var(--color-header-text); /* Cor do texto */
+    padding: 10px 20px;
+    height: 60px; /* Altura fixa da barra superior */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para o efeito de elevação */
+    width: 100%; /* Ocupa a largura total */
+}
+
+.site-logo-text { /* Estilos para o texto/mini-logo na barra superior "ETBRAZ" */
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-header-text);
+    margin-left: 20px;
+}
+
+.top-bar .user-info { /* Estilos para as informações do usuário logado */
+    color: var(--color-header-text);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar .user-info a { /* Estilos para links na informação do usuário */
+    color: var(--color-header-text);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-bar .user-info a:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTILOS DA IMAGEM DE BANNER PRINCIPAL (topo.jpg) --- */
+.main-banner-image {
+    background-image: url('../img/topo.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px; /* Altura fixa do seu banner */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra para o banner */
+}
+
+/* --- ESTILOS DA BARRA DE NAVEGAÇÃO (<section> <nav>) --- */
+/* O seu `section` original não tinha muitas regras, mantendo-o simples */
+section {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Adicione padding ou outros estilos se esta seção contiver a navegação principal */
+}
+
+/* --- ESTILOS PARA CAIXAS DE CONTEÚDO GENÉRICAS (ex: o .content do seu original) --- */
+.content {
+    background-color: var(--color-background-card); /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* --- ESTILOS DO RODAPÉ --- */
+.footer {
+    background-color: var(--color-header-bg); /* Usando a mesma cor da barra superior */
+    color: var(--color-header-text);
+    text-align: center;
+    padding: 10px;
+    height: 60px; /* Altura fixa do rodapé */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Garante que ocupe a largura total */
+}
