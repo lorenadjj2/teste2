@@ -1,0 +1,12 @@
+/* public/assets/css/teste_display.css */
+
+body {
+    background-color: #ffcccc !important; /* Cor de fundo para testar o carregamento */
+}
+
+.main-banner-image {
+    background-color: #0000ff !important; /* Azul forte para ser óbvio */
+    height: 400px !important; /* Altura bem grande para ser óbvia */
+    width: 100% !important;
+    border: 5px solid red !important; /* Borda para ver o espaço da div */
+}
